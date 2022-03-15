@@ -7,7 +7,7 @@
  */
 static char *font = "JetBrains Mono:size=10";
 static char *font2[] = { "JoyPixels:size=10" };
-static int borderpx = 5;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
