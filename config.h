@@ -7,7 +7,7 @@
  */
 static char *font = "JetBrains Mono:size=10";
 static char *font2[] = { "JoyPixels:size=10" };
-static int borderpx = 0;
+static int borderpx = 10;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -113,27 +113,27 @@ float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#1d2021", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+	/* "#000000", /1* hard contrast: #1d2021 / soft contrast: #32302f *1/ */
+	/* "#cc241d", */
+	/* "#98971a", */
+	/* "#d79921", */
+	/* "#458588", */
+	/* "#b16286", */
+	/* "#689d6a", */
+	/* "#a89984", */
+	/* "#928374", */
+	/* "#fb4934", */
+	/* "#b8bb26", */
+	/* "#fabd2f", */
+	/* "#83a598", */
+	/* "#d3869b", */
+	/* "#8ec07c", */
+	/* "#ebdbb2", */
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#1d2021", /* 258 -> bg */
+	"#000000", /* 258 -> bg */
 	"#ebdbb2", /* 259 -> fg */
 };
 
@@ -555,3 +555,4 @@ static char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
 	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
+
